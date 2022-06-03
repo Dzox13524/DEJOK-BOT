@@ -700,16 +700,16 @@ Detected @${participant.split`@`[0]} deleted message
 
 global.dfail = (type, m, conn) => {
     let msg = {
-        rowner: 'This command can only be used by _*OWNER*_',
-        owner: 'This command can only be used by _*Owner Bot*_!',
-        mods: 'This command can only be used by _*Moderator*_ !',
-        premium: 'This command is only for _*Premium Members*_!',
-        group: 'This command can only be used in *Groups*!',
-        private: 'This command can only be used in *Private Chat*!',
-        admin: 'This command is only for *Group Admin*!',
-        botAdmin: 'Make bot as *Admin* to use this command!',
-        unreg: 'Please register to use this feature by typing:\n\n*#register name.age*\n\nContoh: *#register Valor.23*',
-        restrict: 'This feature is *disabled*!'
+        rowner: 'command ini hanya bisa digunakan oleh _*OWNER*_',
+        owner: 'command ini hanya bisa digunakan oleh _*Owner Bot*_!',
+        mods: 'command ini hanya bisa digunakan oleh _*Moderator*_ !',
+        premium: 'command ini khusus _*Premium Members*_!',
+        group: 'command ini khusus digunakan di *Groups*!',
+        private: 'command ini khusus digunakan di *Private Chat*!',
+        admin: 'command ini khusus *Group Admin*!',
+        botAdmin: 'jadikan bot *Admin* untuk menggunakan command!',
+        unreg: 'Register dulu coeg untuk gunain commandnya:\n\n*#register name.age*\n\nContoh: *#register Ahmad.11*',
+        restrict: 'MENU INI *disabled*!'
     }[type]
     if (msg) return m.reply(msg)
 }
